@@ -1,35 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://github.com/" name="github"/>
-  <remote fetch="git://gitorious.org" name="gitorious"/>
-  <remote fetch="git://android.git.kernel.org/" name="korg" review="review.source.android.com"/>
+  <remote fetch="https://github.com/" name="github"/>
+  <remote fetch="https://android-review.linaro.org/" name="korg" review="review.source.android.com"/>
   
   <default remote="korg" revision="cupcake-release"/>
   
   <project name="abstrakraft/android_dream-open" path="vendor/htc/dream-open" remote="github" revision="refs/heads/cupcake"/>
-  <project name="android-obex/obexftp" path="external/obexftp" remote="gitorious" revision="refs/heads/master"/>
-  <project name="android-obex/obexpushd" path="external/obexpushd" remote="gitorious" revision="refs/heads/master"/>
-  <project name="android-obex/openobex" path="external/openobex" remote="gitorious" revision="refs/heads/master"/>
-  <project name="cyanogen/android_bionic" path="bionic" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_bootable_recovery" path="bootable/recovery" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_build" path="build" remote="github" revision="refs/heads/master">
+  <project name="CyanogenMod/android_bionic" path="bionic" remote="github" revision="664dac1e959dda5f017571d52ab4a34891800927"/>
+  <project name="CyanogenMod/android_bootable_recovery" path="bootable/recovery" remote="github" revision="cupcake"/>
+  <project name="abstrakraft/android_build" path="build" remote="github" revision="cm-donut-4.1">
     <copyfile dest="Makefile" src="core/root.mk"/>
   </project>
-  <project name="cyanogen/android_dalvik" path="dalvik" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_development" path="development" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_external_opencore" path="external/opencore" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_frameworks_base" path="frameworks/base" remote="github" revision="cm-4.0"/>
-  <project name="cyanogen/android_frameworks_policies_base" path="frameworks/policies/base" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_packages_apps_AlarmClock" path="packages/apps/AlarmClock" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_packages_apps_Browser" path="packages/apps/Browser" remote="github" revision="cm-4.0"/>
-  <project name="cyanogen/android_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="cm-4.0"/>
-  <project name="cyanogen/android_packages_apps_Email" path="packages/apps/Email" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_packages_apps_Launcher" path="packages/apps/Launcher" remote="github" revision="cm-4.0"/>
-  <project name="cyanogen/android_packages_apps_Mms" path="packages/apps/Mms" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_packages_apps_Music" path="packages/apps/Music" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_packages_apps_Phone" path="packages/apps/Phone" remote="github" revision="refs/heads/master"/>
-  <project name="cyanogen/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="cm-4.0"/>
-  <project name="cyanogen/android_system_core" path="system/core" remote="github" revision="refs/heads/master"/>
+  <project name="CyanogenMod/android_dalvik" path="dalvik" remote="github" revision="5a2056ca8c7e7c0ed9f51d68cedbee59cc936685"/>
+  <project name="CyanogenMod/android_development" path="development" remote="github" revision="b2dc52fdd4c49523a7d909c65e3afe82f6acf83a"/>
+  <project name="CyanogenMod/android_external_opencore" path="external/opencore" remote="github" revision="9a765092098a3b33aa3e10c7fe00159902215f85"/>
+  <project name="CyanogenMod/android_frameworks_base" path="frameworks/base" remote="github" revision="51e7dcf0fb3bb2564611496059cb8bc16878d8cd"/>
+  <project name="CyanogenMod/android_frameworks_policies_base" path="frameworks/policies/base" remote="github" revision="4278f2c02fb951bad823a9d90a039e10ff526190"/>
+  <project name="bazli/android_packages_apps_AlarmClock" path="packages/apps/AlarmClock" remote="github" revision="8240786b0fedd3872970d16489c11c477a26340a"/>
+  <project name="CyanogenMod/android_packages_apps_Browser" path="packages/apps/Browser" remote="github" revision="81d831eb31c8245a86be77e78d507d44e4f4c0d2"/>
+  <project name="CyanogenMod/android_packages_apps_Contacts" path="packages/apps/Contacts" remote="github" revision="66344b132c94e002e37faf4574d04f940578e0c7"/>
+  <project name="CyanogenMod/android_packages_apps_Email" path="packages/apps/Email" remote="github" revision="16b76d78cddce0cf6aa3dce3676492182de43b54"/>
+  <project name="CyanogenMod/android_packages_apps_Launcher" path="packages/apps/Launcher" remote="github" revision="5f6948007079c9b867ca6b2a283766641524a137"/>
+  <project name="CyanogenMod/android_packages_apps_Mms" path="packages/apps/Mms" remote="github" revision="59d89fba87c9775c19f7557d673b474e8544868d"/>
+  <project name="CyanogenMod/android_packages_apps_Music" path="packages/apps/Music" remote="github" revision="283279d2f62d7444010a24148d66ace5a30211af"/>
+  <project name="CyanogenMod/android_packages_apps_Phone" path="packages/apps/Phone" remote="github" revision="04a7ee829585973c667ca688a41f65897eaad452"/>
+  <project name="CyanogenMod/android_packages_apps_Settings" path="packages/apps/Settings" remote="github" revision="11af4eddff3c1a1b45c7ef33a66649fcad152423"/>
+  <project name="CyanogenMod/android_system_core" path="system/core" remote="github" revision="004821f84fd43c0dbfe494d650948ab799e3ba56"/>
   <project name="kruton/android_external_flac" path="external/flac" remote="github" revision="refs/heads/master"/>
   <project name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy" revision="076ef94d61f349f7cf0fe776e60456d8f232cca5"/>
   <project name="platform/bootable/diskinstaller" path="bootable/diskinstaller" revision="8fd8fc6c4d23e1a287fc64f817de23cabcf55b78"/>
@@ -130,4 +126,5 @@
   <project name="platform/system/bluetooth" path="system/bluetooth" revision="df782f29a530d805c13f32bb43883306c05a4504"/>
   <project name="platform/system/extras" path="system/extras" revision="refs/heads/donut"/>
   <project name="platform/system/wlan/ti" path="system/wlan/ti" revision="refs/heads/donut"/>
+  <project name="platform/vendor/asus/eee_701" path="vendor/asus/eee_701" revision="refs/heads/cupcake"/>
 </manifest>
